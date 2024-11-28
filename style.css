@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #28a745;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  canvas {
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  #controls {
+    margin-top: 20px;
+  }
+  
+  #player-names {
+    width: 80%;
+    height: 100px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #09bcff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #reset-btn {
+    background-color: #dc3545;
+    display: none;
+  }
+  
+  #mute-btn {
+    background-color: #6c757d;
+  }
+  
+  #controls.hidden {
+    display: none;
+  }
+  
+  #winner-announcement {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #28a745;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #winner-announcement.show {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    #player-names {
+      width: 90%;
+    }
+  }
+  

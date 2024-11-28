@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Roulette Game | Chriskript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Virtual Roulette</h1>
+  <p>Virtual Roulette is a fun and interactive online game where players take turns to spin a virtual arrow and see where it lands. Each player’s name is placed in a section of the roulette-style circle, and the arrow will spin to determine the winner. Whether you're using it for group games, parties, or decision-making, Virtual Roulette adds an exciting twist to any event. Simply enter your players' names, spin the wheel, and let the arrow decide the winner!</p>
+  <div id="controls">
+    <textarea id="player-names" rows="5" placeholder="Enter player names, one per line"></textarea>
+    <br>
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+    <button id="mute-btn">Mute Sound</button>
+    <div id="winner-announcement" aria-live="polite"></div>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>
